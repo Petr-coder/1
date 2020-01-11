@@ -9,16 +9,15 @@ public class number_17 {
 
         public static void main(String[] args) {
             try {
-                InputStreamReader inputStreamReader = new InputStreamReader(System.in); 
+                InputStreamReader inputStreamReader = new InputStreamReader(System.in);
                 BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-
-                File file = new File("file.txt");
+                File file = new File("file1.txt");
                 FileWriter fileWriter = new FileWriter(file);
                 BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
+                System.out.println("Произведите ввод данных в файл. По окончанию ввода введите команду \"стоп\"");
                 String line;
-                while(!(line = bufferedReader.readLine()).equals("exit")) {
-                    bufferedWriter.write(line);
+                while(!(line = bufferedReader.readLine()).equals("стоп")) {
+                    bufferedWriter.write(line + "\n");
                 }
 
                 bufferedReader.close();
@@ -28,5 +27,3 @@ public class number_17 {
             }
         }
     }
-
-}
