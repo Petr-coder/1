@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 3. Конвертация числа X типа int в число Y типа double
 Все три числа разных типов необходимо в столбик вывести на экран. */
 
-public class Solution {
+public class number_14 {
     public static void main(String args[]) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String S = reader.readLine();

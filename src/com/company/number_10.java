@@ -9,17 +9,22 @@ import java.io.InputStreamReader;
 public class number_10 {
     public static void main(String args[]) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int abc[][] = new int[3][3];
+        System.out.println("Определите размер матрицы, м-р Андерсон");
+        int a = Integer.parseInt(reader.readLine());
+        int b = Integer.parseInt(reader.readLine());
+        int[][] abc = new int[a][b];
+
+        System.out.println("Произведите ввод данных с клавиатуры в матрицу");
 
         int t = 0, i = 0;
-        for (i = 0; i < 3; ++i) {
-            for (t = 0; t < 3; ++t) {
+        for (i = 0; i < a; ++i) {
+            for (t = 0; t < b; ++t) {
                 abc[i][t] = Integer.parseInt(reader.readLine());
             }
         }
 
-        for (i = 0; i < 3; ++i) {
-            System.out.print(abc[0][i] * 3 + " ");
+        for (i = 0, t =0 ; i < b; ++i) {
+            System.out.print(abc[t][i] * 3 + " ");
         }
     }
 }
