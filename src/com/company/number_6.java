@@ -18,10 +18,11 @@ public class number_6 {
 
         double a = (x + y + z)/3;
         System.out.println(a);
-        a = a / 2;
 
+        int b = (int) a;
+        b = b / 2;
 
-        if (a > 3)
+        if (b > 3)
             System.out.println("Программа выполнена корректно");
 
     }
